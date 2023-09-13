@@ -1,0 +1,35 @@
+#background-container {
+  /* width: 100%; */
+  min-height: 100vh;
+  background-image: url('../images/sun-clouds.jpg');
+  background-size: cover;
+  background-position: center center;
+}
+
+
+.result {
+  background-color: #212529;
+  color: white;
+}
+
+#search-btn,
+#subscribe-btn {
+  position: absolute;
+  top: 6px;
+  right: 18px;
+  bottom: 6px;
+
+}
+
+footer {
+  padding: 60px 0;
+  background-color: #1E202B;
+}
+
+
+.fa-brands{
+  border-radius: 50%;
+  background-color: #d2daff !important;
+  color: #0B5ED7  !important;
+
+}

@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+
+
+</head>
+
+<body>
+    <div>
+        <nav class="navbar bg-dark border-bottom border-body navbar-expand-lg " data-bs-theme="dark">
+            <div class="container p-2">
+                <a class="navbar-brand" href="#">
+                    <img src="images/logo.png" class="w-50" alt="">
+                    Weather</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse " id="navbarNavDropdown">
+                    <ul class="navbar-nav ms-auto gap-5">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">News</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Live Cameras</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Photos</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Contacts</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+        <div id="background-container">
+            <main  class="container ">
+            <div class="row p-5">
+                <div class="col-12 position-relative">
+                    <input type="text" id="input" class="form-control p-3 rounded-5" placeholder="Find your location...">
+                    <button id="search-btn" class="btn btn-primary px-5 rounded-5 ">Search</button>
+                </div>
+            </div>
+            <div class="row forcast-container d-none">
+                <div class="col-md-4 p-3 ">
+                    <div class="first-day result h-100 p-3 rounded-3">
+                        <div class="time d-flex justify-content-between p-3">
+                            <p class="first-day-day"></p>
+                            <p class="first-day-date"></p>
+                        </div>
+                        <div class="temp-container d-flex flex-column gap-2 ">
+                            <p class="city"></p>
+                            <p class="first-day-temp-c fs-1"></p>
+                            <p class="first-day-condition-text"></p>
+                        </div>
+                        <div class="icon ">
+                            <img src="" class="first-day-img" alt="">
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 p-3 ">
+                    <div class="second-day result h-100 p-3 rounded-3">
+                        <div class="time d-flex justify-content-between p-3">
+                            <p class="second-day-day"></p>
+                            <p class="second-day-date"></p>
+                        </div>
+                        <div class="temp-container d-flex flex-column gap-2 text-center">
+                            <p class="second-day-max-temp-c fs-4 mb-0"></p>
+                            <p class="second-day-min-temp-c"></p>
+                            <p class="second-day-condition-text"></p>
+                        </div>
+                        <div class="icon text-center">
+                            <img src="" class="second-day-img" alt="">
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 p-3 ">
+                    <div class="third-day result h-100 p-3 rounded-3">
+                        <div class="time d-flex justify-content-between p-3 ">
+                            <p class="third-day-day"></p>
+                            <p class="third-day-date"></p>
+                        </div>
+                        <div class="temp-container d-flex flex-column gap-2 text-center">
+                            <p class="third-day-max-temp-c fs-4 mb-0"></p>
+                            <p class="third-day-min-temp-c"></p>
+                            <p class="third-day-condition-text"></p>
+                        </div>
+                        <div class="icon text-center">
+                            <img src="" class="third-day-img" alt="">
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </main>
+        </div>
+        
+    </div>
+    <footer class="">
+        
+        <div class="container">
+            <div class="row g-4 align-items-center">
+                <div class="col-lg-7 position-relative">
+                    <input type="email" class="form-control p-3 rounded-5" placeholder="Enter your email to subscribe ....">
+                    <button id="subscribe-btn" class="btn btn-primary px-5 rounded-5 ">Subscribe</button>
+                </div>
+                <div class="col-lg-3 offset-lg-1 icons d-flex justify-content-lg-center gap-3 text-white">
+                    <i class="fa-brands fa-facebook-f p-2 fa-2x rounded-circle p-2 border border-1 border-white"></i>
+                    <i class="fa-twitter fa-brands p-2 fa-2x rounded-circle p-2 border border-1 border-white"></i>
+                    <i class="fa-linkedin-in fa-brands p-2 fa-2x rounded-circle p-2 border border-1 border-white"></i>
+                    <i class="fa-brands fa-pinterest p-2 fa-2x rounded-circle p-2 border border-1 border-white"></i>
+                    <!-- <span class="d-flex justify-content-center ">
+                    </span>
+                    <span class="d-flex justify-content-center ">
+                    </span>
+                    <span class="d-flex justify-content-center  ">
+                    </span>
+                    <span class="d-flex justify-content-center ">
+                    </span> -->
+                    
+                </div>
+            </div>
+            
+    
+        </div>
+    </footer>
+
+
+
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/all.min.js"></script>
+    <script src="js/index.js"></script>
+</body>
+
+</html>
